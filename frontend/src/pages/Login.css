@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 0%;
+}
+
+.centered-form-wrapper {
+  /* min-height: 100vh;*/ 
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%
+  /* background: transparent; */
+  /* margin-right: 0%; */
+}
+
+.login-form-box {
+  width: 100%;
+  max-width: 320px;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: none;
+  background: none;
+  margin-right: 0%;
+}
+
+.centered-form-wrapper .container {
+  /* margin: 0 auto !important; */
+  width: 100%;
+  /* max-width: 400px; */
+  background: none;
+  border-radius: 12px;
+  box-shadow: none;
+  padding: 2.5rem 2rem;
+  margin-right: 0%; 
+  margin-left: 0%;
+} 

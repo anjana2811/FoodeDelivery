@@ -1,0 +1,323 @@
+/*html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+
+.owner-dashboard {
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  max-width: 1100px;
+ margin-left: 0%;
+ margin-right: 0%;
+ margin-bottom: 5rem;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 2rem ;
+}
+.owner-details {
+  background: #fff3e0;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(255,152,0,0.08);
+  margin-bottom: 2rem;
+  text-align: center;
+  /* max-width: 500px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.dashboard-actions {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+.dashboard-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-btn:hover {
+  background: #e65100;
+}
+.dashboard-btn.delete {
+  background: #e53935;
+}
+.dashboard-btn.delete:hover {
+  background: #b71c1c;
+}
+.add-restaurant-form, .add-food-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.add-restaurant-form input, .add-food-form input {
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  border: 1px solid #ffcc80;
+  font-size: 1rem;
+  flex: 1 1 180px;
+}
+.add-restaurant-form button, .add-food-form button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 7px;
+  border: none;
+  background: #43a047;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-restaurant-form button:hover, .add-food-form button:hover {
+  background: #2e7031;
+}
+.owner-restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+}
+.owner-restaurant-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  min-width: 260px;
+  max-width: 320px;
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+.restaurant-card-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.owner-foods-section {
+  margin-bottom: 2.5rem;
+}
+.owner-foods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+.owner-food-card {
+  background: #fffde7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255,193,7,0.08);
+  padding: 1rem 1.5rem;
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 180px;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.owner-orders-section {
+  margin-top: 2.5rem;
+}
+.owner-orders-page {
+  padding: 2.5rem 0;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(33,150,243,0.08);
+}
+.selected-restaurant-details {
+  background: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.08);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.selected-restaurant-details img {
+  width: 250px !important;
+  height: 250px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.owner-orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.owner-order-card {
+  background: #fffde7;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(255,193,7,0.13);
+  padding: 1.2rem 1.7rem;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 260px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border-left: 6px solid #ffb300;
+}
+.owner-order-card:hover {
+  box-shadow: 0 6px 24px rgba(255,193,7,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.owner-order-card p {
+  margin: 0.5rem 0;
+  font-size: 1.08rem;
+}
+.owner-order-card strong {
+  color: #ff9800;
+}
+.owner-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.owner-links a {
+  background: #ff9800;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+.owner-links a:hover {
+  background: #e65100;
+}
+.owner-restaurant-card .dashboard-btn {
+  margin-top: 0.7rem;
+}
+
+.enhanced-food-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 24px 20px 20px 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.food-image-large {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 2px solid #f0f0f0;
+}
+
+.card-btn-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.card-btn {
+  min-width: 90px;
+  font-size: 1rem;
+  padding: 8px 0;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.left-btn {
+  align-self: flex-start;
+}
+
+.right-btn {
+  align-self: flex-end;
+}
+
+.food-price {
+  font-weight: bold;
+  color: #2e8b57;
+  font-size: 1.2rem;
+  margin: 8px 0 4px 0;
+}
+
+.food-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.owner-foods-flex-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+  align-items: flex-start;
+}
+
+.owner-foods-left {
+  flex: 0 0 340px;
+  max-width: 340px;
+  min-width: 260px;
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 18px;
+  height: fit-content;
+}
+
+.owner-foods-right {
+  flex: 1 1 0%;
+  min-width: 320px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 24px 24px 24px;
+}
+
+@media (max-width: 900px) {
+  .owner-foods-flex-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .owner-foods-left, .owner-foods-right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.owner-foods-add-btn-row {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 8px;
+}
+
+.add-food-form {
+  margin-bottom: 72px;
+} 
